@@ -31,3 +31,34 @@ This project demonstrates two Java-based implementations of a TCP client-server 
    javac Server.java
    javac Client.java
 
+### 1. Single-threaded Server
+         +------------+        TCP        +------------------+
+         |   Client   |  <--------------> |   ServerSocket   |
+         +------------+                  +------------------+
+                                          | Accepts one client
+                                          | Handles request
+                                          | Sends response
+                                          +------------------
+
+### 2. Multithreaded Server
+   
+         +------------+                   +----------------------+
+         |  Client 1  |   TCP Connection  |                      |
+         +------------+  <------------->  |                      |
+         +------------+                   |                      |
+         |  Client 2  |   TCP Connection  |   ServerSocket       |
+         +------------+  <------------->  |     (Main Thread)    |
+         +------------+                   |                      |
+         |  Client N  |   TCP Connection  |                      |
+         +------------+  <------------->  |                      |
+                                         +-----------+----------+
+                                                     |
+                                                     | (new Thread per client)
+                                                     ↓
+                                          +------------------------+
+                                          |   ClientHandler Thread |
+                                          |   Handles one client   |
+                                          +------------------------+
+
+
+
