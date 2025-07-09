@@ -1,13 +1,13 @@
-# Java Socket Programming – Single-threaded & Multithreaded Client-Server
+# Java Socket Programming – Client-Server Architecture
 
-This repository contains two Java projects demonstrating TCP socket communication using a **client-server architecture**:
+This repository demonstrates two implementations of a TCP-based client-server model using Java:
 
-- 🔹 `single_threaded/`: A basic server that handles **one client at a time**
-- 🔹 `multithreaded/`: A more advanced server that handles **multiple clients concurrently** using Java threads
+- **Single-threaded server:** Handles one client connection at a time
+- **Multithreaded server:** Handles multiple client connections concurrently using threads
 
-These examples showcase how Java networking works using `ServerSocket`, `Socket`, `BufferedReader`, and `PrintWriter`.
+Both implementations use Java's core networking libraries (`Socket`, `ServerSocket`) and I/O streams to exchange messages between client and server applications.
 
 ---
 
-## 📁 Project Structure
+## Contents
 
