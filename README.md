@@ -21,7 +21,7 @@ This project demonstrates two Java-based implementations of a TCP client-server 
 
 ### Requirements
 - Java JDK 8 or higher
-- Command line or IDE (e.g., IntelliJ, VS Code)
+- Command line or IDE (e.g. VS Code)
 
 ### Steps
 
