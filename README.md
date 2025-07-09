@@ -30,3 +30,5 @@ This project demonstrates two Java-based implementations of a TCP client-server 
    ```bash
    javac Server.java
    javac Client.java
+   ![image](https://github.com/user-attachments/assets/5be12fa8-3cd8-4fcc-af40-5aeecd0688b9)
+
